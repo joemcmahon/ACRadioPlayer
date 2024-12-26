@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="ACRadioPlayer" src="https://fethica.com/assets/img/web/repo-hero.png" width="749">
+<img alt="ACRadioPlayer" src="https://pemungkah.com/wp-content/uploads/2024/12/ACRadioPlayer_header.png" width="749">
 </p>
 
 # ACRadioPlayer
@@ -17,7 +17,7 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 <p align="center">
-    <img alt="ACRadioPlayer" src="https://fethica.com/assets/img/web/fradioplayer-example.png" width="485">
+    <img alt="ACRadioPlayer" src="https://pemungkah.com/wp-content/uploads/2024/12/ACRadioPlayer_demo.png" width="485">
 </p>
 
 ## Features
@@ -174,10 +174,10 @@ func radioPlayer(_ player: ACRadioPlayer, artworkDidChange artworkURL: URL?)
 
 ## Swift Radio App
 
-For more complete app features, check out [Swift Radio App](https://github.com/analogcode/Swift-Radio-Pro) based on **ACRadioPlayer**
+For more complete app features, check out [RadioSpiral](https://github.com/joemcmahon/RadioSpiral) based on **ACRadioPlayer**
 
 <p align="center">
-    <img alt="Swift Radio" src="https://fethica.com/assets/img/web/swift-radio.jpg">
+    <img alt="RadioSpiral demo screens" src="https://pemungkah.com.com/radiospiral_demo.jpg">
 </p>
 
 ## Hacking
