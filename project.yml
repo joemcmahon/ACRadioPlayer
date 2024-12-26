@@ -1,4 +1,4 @@
-name: FRadioPlayer
+name: ACRadioPlayer
 options:
   bundleIdPrefix: com.fethica
   deploymentTarget:
@@ -6,24 +6,24 @@ options:
     macOS: 10.12
     tvOS: 10.0
 targets:
-  FRadioPlayer:
+  ACRadioPlayer:
     type: framework
     platform: [iOS]
-    sources: Sources/FRadioPlayer
+    sources: Sources/ACRadioPlayer
     scheme: {}
     settings:
       INFOPLIST_FILE: CarthageInfo.plist
-  FRadioPlayer_mac:
+  ACRadioPlayer_mac:
     type: framework
     platform: [macOS]
-    sources: Sources/FRadioPlayer
+    sources: Sources/ACRadioPlayer
     scheme: {}
     settings:
       INFOPLIST_FILE: CarthageInfo.plist
-  FRadioPlayer_tvOS:
+  ACRadioPlayer_tvOS:
     type: framework
     platform: [tvOS]
-    sources: Sources/FRadioPlayer
+    sources: Sources/ACRadioPlayer
     scheme: {}
     settings:
       INFOPLIST_FILE: CarthageInfo.plist

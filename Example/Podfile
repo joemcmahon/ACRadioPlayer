@@ -1,26 +1,26 @@
 use_frameworks!
 
-target 'FRadioPlayer_ios' do
+target 'ACRadioPlayer_ios' do
   platform :ios, '10.0'
-  pod 'FRadioPlayer', :path => '../'
+  pod 'ACRadioPlayer', :path => '../'
 
-  target 'FRadioPlayer_Tests' do
+  target 'ACRadioPlayer_Tests' do
     inherit! :complete
 
   end
 end
 
-target 'FRadioPlayer_SwiftUI' do
+target 'ACRadioPlayer_SwiftUI' do
   platform :ios, '14.0'
-  pod 'FRadioPlayer', :path => '../'
+  pod 'ACRadioPlayer', :path => '../'
 end
 
-target 'FRadioPlayer_mac' do
+target 'ACRadioPlayer_mac' do
   platform :osx, '10.12'
-  pod 'FRadioPlayer', :path => '../'
+  pod 'ACRadioPlayer', :path => '../'
 end
 
-target 'FRadioPlayer_tvOS' do
+target 'ACRadioPlayer_tvOS' do
   platform :tvos, '10.0'
-  pod 'FRadioPlayer', :path => '../'
+  pod 'ACRadioPlayer', :path => '../'
 end

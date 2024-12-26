@@ -1,23 +1,23 @@
 <p align="center">
-<img alt="FRadioPlayer" src="https://fethica.com/assets/img/web/repo-hero.png" width="749">
+<img alt="ACRadioPlayer" src="https://fethica.com/assets/img/web/repo-hero.png" width="749">
 </p>
 
-# FRadioPlayer
+# ACRadioPlayer
 
-[![CI Status](https://github.com/fethica/FRadioPlayer/workflows/Swift/badge.svg)](https://github.com/fethica/FRadioPlayer/actions?query=workflow%3ASwift)
-[![CI Status](http://img.shields.io/travis/fethica/FRadioPlayer.svg?style=flat)](https://travis-ci.org/fethica/FRadioPlayer)
-[![Version](https://img.shields.io/cocoapods/v/FRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/FRadioPlayer)
-[![License](https://img.shields.io/cocoapods/l/FRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/FRadioPlayer)
-[![Platform](https://img.shields.io/cocoapods/p/FRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/FRadioPlayer)
+[![CI Status](https://github.com/fethica/ACRadioPlayer/workflows/Swift/badge.svg)](https://github.com/fethica/ACRadioPlayer/actions?query=workflow%3ASwift)
+[![CI Status](http://img.shields.io/travis/fethica/ACRadioPlayer.svg?style=flat)](https://travis-ci.org/fethica/ACRadioPlayer)
+[![Version](https://img.shields.io/cocoapods/v/ACRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/ACRadioPlayer)
+[![License](https://img.shields.io/cocoapods/l/ACRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/ACRadioPlayer)
+[![Platform](https://img.shields.io/cocoapods/p/ACRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/ACRadioPlayer)
 
-FRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
+ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 <p align="center">
-    <img alt="FRadioPlayer" src="https://fethica.com/assets/img/web/fradioplayer-example.png" width="485">
+    <img alt="ACRadioPlayer" src="https://fethica.com/assets/img/web/fradioplayer-example.png" width="485">
 </p>
 
 ## Features
@@ -28,7 +28,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - [x] Automatic handling of route changes
 - [x] Support bluetooth playback
 - [x] Swift 5
-- [x] [Full documentation](https://fethica.github.io/FRadioPlayer/)
+- [x] [Full documentation](https://fethica.github.io/ACRadioPlayer/)
 - [x] Network interruptions handling
 - [x] Support for Carthage
 - [x] Support for macOS
@@ -48,27 +48,27 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### CocoaPods
 
-FRadioPlayer is available through [CocoaPods](http://cocoapods.org). To install
+ACRadioPlayer is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FRadioPlayer'
+pod 'ACRadioPlayer'
 ```
 
 ### Carthage
 
-FRadioPlayer is available through [Carthage](https://github.com/Carthage/Carthage). To install it, simply add the following line to your Cartfile:
+ACRadioPlayer is available through [Carthage](https://github.com/Carthage/Carthage). To install it, simply add the following line to your Cartfile:
 
 ```text
-github "fethica/FRadioPlayer" ~> 0.1.10
+github "fethica/ACRadioPlayer" ~> 0.1.10
 ```
 
 ### Swift Package Manager
 
-FRadioPlayer is available through [SPM](https://github.com/apple/swift-package-manager). To install it, simply add the following dependency to your `Package.swift` file:
+ACRadioPlayer is available through [SPM](https://github.com/apple/swift-package-manager). To install it, simply add the following dependency to your `Package.swift` file:
 
 ```text
-.package(url: "https://github.com/fethica/FRadioPlayer.git", from: "0.1.18")
+.package(url: "https://github.com/fethica/ACRadioPlayer.git", from: "0.1.18")
 ```
 
 ### Manual
@@ -79,16 +79,16 @@ Drag the `Source` folder into your project.
 
 ### Basics
 
-1. Import `FRadioPlayer` (if you are using Cocoapods)
+1. Import `ACRadioPlayer` (if you are using Cocoapods)
 
 ```swift
-import FRadioPlayer
+import ACRadioPlayer
 ```
 
-2. Get the singleton `FRadioPlayer` instance
+2. Get the singleton `ACRadioPlayer` instance
 
 ```swift
-let player = FRadioPlayer.shared
+let player = ACRadioPlayer.shared
 ```
 
 3. Set the delegate for the player
@@ -114,9 +114,9 @@ player.radioURL = URL(string: "http://example.com/station.mp3")
 
 - `isPlaying: Bool` Read only property to check if the player is playing.
 
-- `state: FRadioPlayerState` Player current state of type `FRadioPlayerState`.
+- `state: ACRadioPlayerState` Player current state of type `ACRadioPlayerState`.
 
-- `playbackState: FRadioPlaybackState` Playing state of type `FRadioPlaybackState`.
+- `playbackState: ACRadioPlaybackState` Playing state of type `ACRadioPlaybackState`.
 
 ### Playback controls
 
@@ -144,37 +144,37 @@ player.togglePlaying()
 
 Called when player changes state
 ```swift
-func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState)
+func radioPlayer(_ player: ACRadioPlayer, playerStateDidChange state: ACRadioPlayerState)
 ```
 
 Called when the playback changes state
 ```swift
-func radioPlayer(_ player: FRadioPlayer, playbackStateDidChange state: FRadioPlaybackState)
+func radioPlayer(_ player: ACRadioPlayer, playbackStateDidChange state: ACRadioPlaybackState)
 ```
 
 Called when player changes the current player item
 ```swift
-func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?)
+func radioPlayer(_ player: ACRadioPlayer, itemDidChange url: URL?)
 ```
 
 Called when player item changes the timed metadata value
 ```swift
-func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?)
+func radioPlayer(_ player: ACRadioPlayer, metadataDidChange artistName: String?, trackName: String?)
 ```
 
 Called when player item changes the timed metadata value
 ```swift
-func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?)
+func radioPlayer(_ player: ACRadioPlayer, metadataDidChange rawValue: String?)
 ```
 
 Called when the player gets the artwork for the playing song
 ```swift
-func radioPlayer(_ player: FRadioPlayer, artworkDidChange artworkURL: URL?)
+func radioPlayer(_ player: ACRadioPlayer, artworkDidChange artworkURL: URL?)
 ```
 
 ## Swift Radio App
 
-For more complete app features, check out [Swift Radio App](https://github.com/analogcode/Swift-Radio-Pro) based on **FRadioPlayer**
+For more complete app features, check out [Swift Radio App](https://github.com/analogcode/Swift-Radio-Pro) based on **ACRadioPlayer**
 
 <p align="center">
     <img alt="Swift Radio" src="https://fethica.com/assets/img/web/swift-radio.jpg">
@@ -186,7 +186,7 @@ The Xcode project is generated automatically from `project.yml` using [XcodeGen]
 
 ```sh
 $ mint run yonaskolb/xcodegen
-💾  Saved project to FRadioPlayer.xcodeproj
+💾  Saved project to ACRadioPlayer.xcodeproj
 ```
 
 ## Author
@@ -195,4 +195,4 @@ $ mint run yonaskolb/xcodegen
 
 ## License
 
-FRadioPlayer is available under the MIT license. See the LICENSE file for more info.
+ACRadioPlayer is available under the MIT license. See the LICENSE file for more info.
