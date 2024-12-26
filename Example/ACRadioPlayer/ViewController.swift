@@ -27,24 +27,22 @@ class ViewController: UIViewController {
     
     // List of stations
     let stations = [Station(name: "AZ Rock Radio",
-                                       detail: "We Know Music from A to Z",
-                                       url: URL(string: "http://cassini.shoutca.st:9300/stream")!,
-                                       image: #imageLiteral(resourceName: "station4")),
+                            detail: "We Know Music from A to Z",
+                            url: URL(string: "http://cassini.shoutca.st:9300/stream")!,
+                            image: #imageLiteral(resourceName: "station4")),
                                
-                               Station(name: "Newport Folk Radio",
-                                       detail: "Are you ready to Folk?",
-                                       url: URL(string: "http:rfcmedia.streamguys1.com/Newport.mp3")!,
-                                       image: #imageLiteral(resourceName: "station2")),
+                    Station(name: "RadioSpiral",
+                            detail: "Captivating Electronica 24/7",
+                            url: URL(string: "http://spiral.radio:8000/stream.mp3")!,
+                            image: #imageLiteral(resourceName: "station2"),
+                            serverName:"spiral.radio",
+                            shortCode:" radiospiral"
+                    ),
                                
-                               Station(name: "Absolute Country Hits Radio",
-                                       detail: "The Music Starts Here",
-                                       url: URL(string: "http:strm112.1.fm/acountry_mobile_mp3")!,
-                                       image: #imageLiteral(resourceName: "station1")),
-                               
-                               Station(name: "The Alt Vault",
-                                       detail: "Your Lifestyle... Your Music!",
-                                       url: URL(string: "http:jupiter.prostreaming.net/altmixxlow")!,
-                                       image: #imageLiteral(resourceName: "station3"))]
+                    Station(name: "The Alt Vault",
+                            detail: "Your Lifestyle... Your Music!",
+                            url: URL(string: "http:jupiter.prostreaming.net/altmixxlow")!,
+                            image: #imageLiteral(resourceName: "station3"))]
     
     // Selected station index
     var selectedIndex = 0 {

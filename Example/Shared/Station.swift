@@ -23,20 +23,26 @@ struct Station: Identifiable, Hashable {
     #elseif os(OSX)
     var image: NSImage?
     #endif
+    let serverName: String?
+    let shortCode: String?
     
     #if os(iOS) || os(tvOS)
-    init(name: String, detail: String, url: URL, image: UIImage? = nil) {
+    init(name: String, detail: String, url: URL, image: UIImage? = nil, serverName: String? = nil, shortCode: String? = nil) {
         self.name = name
         self.detail = detail
         self.url = url
         self.image = image
+        self.serverName = serverName
+        self.shortCode = shortCode
     }
     #elseif os(OSX)
-    init(name: String, detail: String, url: URL, image: NSImage? = nil) {
+    init(name: String, detail: String, url: URL, image: NSImage? = nil, serverName: String? = nil, shortCode: String? = nil) {
         self.name = name
         self.detail = detail
         self.url = url
         self.image = image
+        self.serverName = serverName
+        self.shortCode = shortCode
     }
     #endif
 }
