@@ -4,13 +4,27 @@
 
 # ACRadioPlayer
 
-[![CI Status](https://github.com/fethica/ACRadioPlayer/workflows/Swift/badge.svg)](https://github.com/fethica/ACRadioPlayer/actions?query=workflow%3ASwift)
-[![CI Status](http://img.shields.io/travis/fethica/ACRadioPlayer.svg?style=flat)](https://travis-ci.org/fethica/ACRadioPlayer)
+[![CI Status](https://github.com/joemcmahon/ACRadioPlayer/workflows/Swift/badge.svg)](https://github.com/joemcmahon/ACRadioPlayer/actions?query=workflow%3ASwift)
+[![CI Status](http://img.shields.io/travis/joemcmahon/ACRadioPlayer.svg?style=flat)](https://travis-ci.org/joemcmahon/ACRadioPlayer)
 [![Version](https://img.shields.io/cocoapods/v/ACRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/ACRadioPlayer)
 [![License](https://img.shields.io/cocoapods/l/ACRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/ACRadioPlayer)
 [![Platform](https://img.shields.io/cocoapods/p/ACRadioPlayer.svg?style=flat)](http://cocoapods.org/pods/ACRadioPlayer)
 
-ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
+ACRadioPlayer is an extended version of [FRadioPlayer](https://github.com/fethica/FRadioPlayer). It too provides
+a wrapper around AVPlayer to handle internet radio playback, but adds support for radio stations hosted on
+[Azuracast](https://www.azuracast.com/).
+
+Specifically, it uses Azuracast's websocket SSE high-frequency updates to provide more metadata than FRadioPlayer
+could:
+ - Artwork comes directly from your Azuracast server, and does not require iTunes or Spotify.
+ - Album name is available in addition to the artist and track.
+ - Track time and elapsed time provided if available.
+ - Track history (album, title, artist, and artwork) are available (if configured on the Azuracast server).
+
+#### Please note that the project is currently still in flux, and some features are still being implemented/altered.
+
+The sample projects are in the process of being updated to use the new library. The current version of the library
+is simply a renamed version of FRadioPlayer, tweaked so that the library name is different and all current code works.
 
 ## Example
 
@@ -22,13 +36,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Features
 - [x] Support internet radio URL playback
-- [x] Update and parse track metadata
-- [x] Update and show album artwork (via iTunes API)
+- [x] Real-time push updates of metadata
+- [x] Update and show album artwork (extracted by Azuracast from track metadata)
 - [x] Automatic handling of interruptions
 - [x] Automatic handling of route changes
 - [x] Support bluetooth playback
 - [x] Swift 5
-- [x] [Full documentation](https://fethica.github.io/ACRadioPlayer/)
+- [x] [Full documentation](https://joemcmahon.github.io/ACRadioPlayer/) (NOTE: still in process; updates required for new APIs)
 - [x] Network interruptions handling
 - [x] Support for Carthage
 - [x] Support for macOS
@@ -39,12 +53,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 - macOS 10.12+
-- iOS 10.0+
+- iOS 13.5+
 - tvOS 10.0+
-- Xcode 10.2+
+- Xcode 13+
 - Swift 5
 
 ## Installation
+
+We currently suggest you use Swift Pacjage Manager to install ACRadioPlayer. We are currently working on getting the other
+installation options working.
 
 ### CocoaPods
 
@@ -60,7 +77,7 @@ pod 'ACRadioPlayer'
 ACRadioPlayer is available through [Carthage](https://github.com/Carthage/Carthage). To install it, simply add the following line to your Cartfile:
 
 ```text
-github "fethica/ACRadioPlayer" ~> 0.1.10
+github "joemcmahon/ACRadioPlayer" ~> 0.1.10
 ```
 
 ### Swift Package Manager
@@ -68,7 +85,7 @@ github "fethica/ACRadioPlayer" ~> 0.1.10
 ACRadioPlayer is available through [SPM](https://github.com/apple/swift-package-manager). To install it, simply add the following dependency to your `Package.swift` file:
 
 ```text
-.package(url: "https://github.com/fethica/ACRadioPlayer.git", from: "0.1.18")
+.package(url: "https://github.com/joemcmahon/ACRadioPlayer.git", from: "0.1.18")
 ```
 
 ### Manual
@@ -105,10 +122,6 @@ player.radioURL = URL(string: "http://example.com/station.mp3")
 ### Properties
 
 - `isAutoPlay: Bool` The player starts playing when the `radioURL` property gets set. (default == `true`)
-
-- `enableArtwork: Bool` Enable fetching albums artwork from the iTunes API. (default == `true`)
-
-- `artworkSize: Int` Artwork image size. (default == `100` | 100x100).
 
 - `rate: Float?` Read only property to get the current `AVPlayer` rate.
 
@@ -161,20 +174,12 @@ Called when player item changes the timed metadata value
 ```swift
 func radioPlayer(_ player: ACRadioPlayer, metadataDidChange artistName: String?, trackName: String?)
 ```
+Note: this API is currently being updated to handle the more complex metadata available from Azuracast.
 
-Called when player item changes the timed metadata value
-```swift
-func radioPlayer(_ player: ACRadioPlayer, metadataDidChange rawValue: String?)
-```
+## Apps using this library
 
-Called when the player gets the artwork for the playing song
-```swift
-func radioPlayer(_ player: ACRadioPlayer, artworkDidChange artworkURL: URL?)
-```
-
-## Swift Radio App
-
-For more complete app features, check out [RadioSpiral](https://github.com/joemcmahon/RadioSpiral) based on **ACRadioPlayer**
+For more complete app features, check out [RadioSpiral](https://github.com/joemcmahon/RadioSpiral) based on **ACRadioPlayer**.
+Currently under development; will be updated to use more Azuracast features as ACRadioPlayer makes them available.
 
 <p align="center">
     <img alt="RadioSpiral demo screens" src="https://pemungkah.com.com/radiospiral_demo.jpg">
@@ -191,7 +196,7 @@ $ mint run yonaskolb/xcodegen
 
 ## Author
 
-[Fethi El Hassasna](https://twitter.com/fethica)
+[Joe McMahon](https://pemungkah.com), based on work by [Fethi El Hassasna](https://twitter.com/fethica)
 
 ## License
 
