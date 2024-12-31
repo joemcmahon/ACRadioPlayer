@@ -1,26 +1,29 @@
 use_frameworks!
 
 target 'ACRadioPlayer_ios' do
-  platform :ios, '10.0'
+  platform :ios, '13.0'
   pod 'ACRadioPlayer', :path => '../'
+  pod 'ACWebSocketClient', '~> 0.1.3'
 
   target 'ACRadioPlayer_Tests' do
     inherit! :complete
-
-  end
+ end
 end
 
 target 'ACRadioPlayer_SwiftUI' do
   platform :ios, '14.0'
   pod 'ACRadioPlayer', :path => '../'
+  pod 'ACWebSocketClient', '~> 0.1.3'
 end
 
 target 'ACRadioPlayer_mac' do
-  platform :osx, '10.12'
+  platform :osx, '10.15'
   pod 'ACRadioPlayer', :path => '../'
+  pod 'ACWebSocketClient', '~> 0.1.3'
 end
 
 target 'ACRadioPlayer_tvOS' do
-  platform :tvos, '10.0'
+  platform :tvos, '16.0'
   pod 'ACRadioPlayer', :path => '../'
+  pod 'ACWebSocketClient', '~> 0.1.3'
 end

@@ -21,18 +21,18 @@ Pod::Spec.new do |s|
 ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
                        DESC
 
-  s.homepage         = 'https://github.com/fethica/ACRadioPlayer'
-  s.screenshots     = 'https://fethica.com/assets/img/web/fradioplayer-example.png'
+  s.homepage         = 'https://github.com/joemcmahon/ACRadioPlayer'
+  s.screenshots     = 'https://joemcmahon.com/assets/img/web/fradioplayer-example.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Fethi El Hassasna' => 'e.fethi.c@gmail.com' }
-  s.source           = { :git => 'https://github.com/fethica/ACRadioPlayer.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/fethica'
+  s.source           = { :git => 'https://github.com/joemcmahon/ACRadioPlayer.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://bsky.app/profile/equinoxdeschanel.bsky.social'
 
-  s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.12'
-  s.tvos.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
+  s.osx.deployment_target = '10.14'
+  s.tvos.deployment_target = '14.0'
   s.swift_version = '5.0'
-  s.source = { :git => 'https://github.com/fethica/ACRadioPlayer.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/joemcmahon/ACRadioPlayer.git', :tag => s.version.to_s }
   s.source_files = 'Sources/**/*.swift'
 
   # s.resource_bundles = {
@@ -41,5 +41,6 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'ACWebSocketClient', '~> 0.1.3'
+  s.dependency 'Kingfisher', '~> 7.0'
 end

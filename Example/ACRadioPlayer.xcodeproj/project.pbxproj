@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B90C8F720835A3CACB5692F /* Pods_ACRadioPlayer_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC9F9BC32350C69D791241A /* Pods_ACRadioPlayer_ios.framework */; };
+		0A5F8476EEF282D6292545D4 /* Pods_ACRadioPlayer_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B7F8E406D8F5E10DA249C3 /* Pods_ACRadioPlayer_ios.framework */; };
+		482C9C0D1683047A4CEFB0B7 /* Pods_ACRadioPlayer_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DA0E9EDBA69D953E4EA946 /* Pods_ACRadioPlayer_SwiftUI.framework */; };
 		53E4CEB02581A6720026AB0F /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4CEAF2581A6720026AB0F /* StateView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		63DB6C1C8C04A4A14122C34A /* Pods_ACRadioPlayer_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC9F409D9222F0F9356B488 /* Pods_ACRadioPlayer_SwiftUI.framework */; };
 		6521C889257D4CB800E80317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C888257D4CB800E80317 /* ContentView.swift */; };
 		6521C88B257D4CBA00E80317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6521C88A257D4CBA00E80317 /* Assets.xcassets */; };
 		6521C88E257D4CBA00E80317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6521C88D257D4CBA00E80317 /* Preview Assets.xcassets */; };
@@ -26,19 +26,19 @@
 		65347D3E257D71FC00DDE1C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		71FB6DBB2D1D00C70076DD97 /* ACRadioPlayer_SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB6DBA2D1D00C70076DD97 /* ACRadioPlayer_SwiftUI.swift */; };
 		71FB6DBD2D1D01940076DD97 /* NowPlayingSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB6DBC2D1D01940076DD97 /* NowPlayingSplitView.swift */; };
-		7EF0C0F4FF113BB6A81B4614 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F3480523C15D4AEEB2742 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework */; };
-		9DE1D4542B8F51889191A76C /* Pods_ACRadioPlayer_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5988E8C2E73F5A5DD5D873 /* Pods_ACRadioPlayer_tvOS.framework */; };
 		B8D0FE5121B17D47005B64DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0FE5021B17D47005B64DF /* AppDelegate.swift */; };
 		B8D0FE5321B17D47005B64DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0FE5221B17D47005B64DF /* ViewController.swift */; };
 		B8D0FE5621B17D47005B64DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D0FE5421B17D47005B64DF /* Main.storyboard */; };
 		B8D0FE5821B17D49005B64DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D0FE5721B17D49005B64DF /* Assets.xcassets */; };
 		B8D0FE5D21B17DD6005B64DF /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D541FD4915300281653 /* Track.swift */; };
 		B8D0FE5E21B17DD9005B64DF /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D531FD4915300281653 /* Station.swift */; };
+		C2B07BD591892668A9BDE4AE /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BADA01066C2F93A1F349786 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework */; };
 		CAE63D501FD4910000281653 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D4F1FD4910000281653 /* ViewController.swift */; };
 		CAE63D521FD4912000281653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE63D511FD4912000281653 /* Main.storyboard */; };
 		CAE63D551FD4915300281653 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D531FD4915300281653 /* Station.swift */; };
 		CAE63D561FD4915300281653 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D541FD4915300281653 /* Track.swift */; };
-		DB83CC82324A74E106243AA1 /* Pods_ACRadioPlayer_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0C0BD81D65DF86F8BE706C /* Pods_ACRadioPlayer_mac.framework */; };
+		CC6D6A613408813961A78953 /* Pods_ACRadioPlayer_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1E94B4388D85F1BCCE282D /* Pods_ACRadioPlayer_tvOS.framework */; };
+		D8FE20F43DE411E42F5B97B5 /* Pods_ACRadioPlayer_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B804FA4936AD13957C5184E /* Pods_ACRadioPlayer_mac.framework */; };
 		FAE5E44121AC6CD3003F96DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5E44021AC6CD3003F96DB /* AppDelegate.swift */; };
 		FAE5E44321AC6CD3003F96DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5E44221AC6CD3003F96DB /* ViewController.swift */; };
 		FAE5E44521AC6CD4003F96DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE5E44421AC6CD4003F96DB /* Assets.xcassets */; };
@@ -58,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10B578434A03FE51AE221D8A /* Pods-ACRadioPlayer_mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac.release.xcconfig"; sourceTree = "<group>"; };
-		257B5148ADFF316304B18077 /* Pods-ACRadioPlayer_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		2A8F19185E3807164EC6516A /* Pods-ACRadioPlayer_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_SwiftUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_SwiftUI/Pods-ACRadioPlayer_SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
-		2CC9F409D9222F0F9356B488 /* Pods_ACRadioPlayer_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		412A9F8B5D5E4B4705AE9F0E /* Pods-ACRadioPlayer_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_ios/Pods-ACRadioPlayer_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		0046EC696868468E021516BC /* Pods-ACRadioPlayer_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		01C11CAD663EC627E42C2D61 /* Pods-ACRadioPlayer_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios.debug.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_ios/Pods-ACRadioPlayer_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		0BADA01066C2F93A1F349786 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2557A699AF63CDC0887DE837 /* Pods-ACRadioPlayer_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_tvOS.release.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		2C2CE871889E6A8946D52CF5 /* Pods-ACRadioPlayer_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_SwiftUI/Pods-ACRadioPlayer_SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		53E4CEAF2581A6720026AB0F /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
-		5E0C0BD81D65DF86F8BE706C /* Pods_ACRadioPlayer_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B804FA4936AD13957C5184E /* Pods_ACRadioPlayer_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ACRadioPlayer_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRadioPlayer_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		607FACE51AFB9204008FA782 /* ACRadioPlayer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACRadioPlayer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		612EF1D0B96E8B922E04963F /* Pods-ACRadioPlayer_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_ios/Pods-ACRadioPlayer_ios.release.xcconfig"; sourceTree = "<group>"; };
+		63E6F0B69C742AFCC3559777 /* Pods-ACRadioPlayer_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios.release.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_ios/Pods-ACRadioPlayer_ios.release.xcconfig"; sourceTree = "<group>"; };
 		6521C884257D4CB800E80317 /* ACRadioPlayer_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRadioPlayer_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6521C888257D4CB800E80317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6521C88A257D4CBA00E80317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,16 +84,14 @@
 		6521C8AB257D4EA900E80317 /* TabIconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIconsView.swift; sourceTree = "<group>"; };
 		6521C8B2257D4ED000E80317 /* AirPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayView.swift; sourceTree = "<group>"; };
 		655FC62D257D59A900867676 /* ACRadioPlayer_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ACRadioPlayer_SwiftUI.entitlements; sourceTree = "<group>"; };
-		6FD964ADEBDFA118738E9D9B /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		68B2EDFCA98FD03D19A4AFBD /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71FB6DBA2D1D00C70076DD97 /* ACRadioPlayer_SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRadioPlayer_SwiftUI.swift; sourceTree = "<group>"; };
 		71FB6DBC2D1D01940076DD97 /* NowPlayingSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingSplitView.swift; sourceTree = "<group>"; };
-		733A31C2D8DBB7FB9D433453 /* Pods-ACRadioPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_Tests/Pods-ACRadioPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		741614D8D15537554278BF0D /* Pods-ACRadioPlayer_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_SwiftUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_SwiftUI/Pods-ACRadioPlayer_SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
-		7A5988E8C2E73F5A5DD5D873 /* Pods_ACRadioPlayer_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B59F870E46427A37B5A6185 /* ACRadioPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACRadioPlayer.podspec; path = ../ACRadioPlayer.podspec; sourceTree = "<group>"; };
-		93384C18F68BA278DC1055A8 /* Pods_ACRadioPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB5F3480523C15D4AEEB2742 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC0D107E336293D60827BCD /* Pods-ACRadioPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_Tests/Pods-ACRadioPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1E94B4388D85F1BCCE282D /* Pods_ACRadioPlayer_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9183F872CEE1C5988D54E067 /* Pods-ACRadioPlayer_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_SwiftUI/Pods-ACRadioPlayer_SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		A4F5950BFE265D5FA8F6153F /* Pods-ACRadioPlayer_mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_mac.debug.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DA0E9EDBA69D953E4EA946 /* Pods_ACRadioPlayer_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D0FE4E21B17D47005B64DF /* ACRadioPlayer_tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRadioPlayer_tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D0FE5021B17D47005B64DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8D0FE5221B17D47005B64DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,17 +99,13 @@
 		B8D0FE5721B17D49005B64DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8D0FE5921B17D49005B64DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9443D8603AB2AE7F9D587B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		BC2AE6470A4C0BE46711D9AF /* Pods-ACRadioPlayer_mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac.debug.xcconfig"; sourceTree = "<group>"; };
-		C4CDACDB88A2BE0BBCA28002 /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C9B7F8E406D8F5E10DA249C3 /* Pods_ACRadioPlayer_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE63D4F1FD4910000281653 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAE63D511FD4912000281653 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CAE63D531FD4915300281653 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		CAE63D541FD4915300281653 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		CBB7FF2C424962201E0CE53E /* Pods-ACRadioPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_Example/Pods-ACRadioPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DC11A056E5D4F1B69F9ABE88 /* Pods-ACRadioPlayer_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E3AF3BE5D28A2EC29DE30915 /* Pods-ACRadioPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRadioPlayer_Example/Pods-ACRadioPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A68FC8F90B1A56BE9C9461 /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EBF1979AC9525CAB6AC3701A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EFC9F9BC32350C69D791241A /* Pods_ACRadioPlayer_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE5E43E21AC6CD3003F96DB /* ACRadioPlayer_mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRadioPlayer_mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE5E44021AC6CD3003F96DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE5E44221AC6CD3003F96DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +113,7 @@
 		FAE5E44721AC6CD4003F96DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE5E44921AC6CD4003F96DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE5E44A21AC6CD4003F96DB /* ACRadioPlayer_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ACRadioPlayer_mac.entitlements; sourceTree = "<group>"; };
+		FFC4464C86B72E03C95D9834 /* Pods-ACRadioPlayer_mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRadioPlayer_mac.release.xcconfig"; path = "Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B90C8F720835A3CACB5692F /* Pods_ACRadioPlayer_ios.framework in Frameworks */,
+				0A5F8476EEF282D6292545D4 /* Pods_ACRadioPlayer_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF0C0F4FF113BB6A81B4614 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework in Frameworks */,
+				C2B07BD591892668A9BDE4AE /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DB6C1C8C04A4A14122C34A /* Pods_ACRadioPlayer_SwiftUI.framework in Frameworks */,
+				482C9C0D1683047A4CEFB0B7 /* Pods_ACRadioPlayer_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE1D4542B8F51889191A76C /* Pods_ACRadioPlayer_tvOS.framework in Frameworks */,
+				CC6D6A613408813961A78953 /* Pods_ACRadioPlayer_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,13 +153,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB83CC82324A74E106243AA1 /* Pods_ACRadioPlayer_mac.framework in Frameworks */,
+				D8FE20F43DE411E42F5B97B5 /* Pods_ACRadioPlayer_mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57BC925017B9C33BE04D6B0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DA0E9EDBA69D953E4EA946 /* Pods_ACRadioPlayer_SwiftUI.framework */,
+				C9B7F8E406D8F5E10DA249C3 /* Pods_ACRadioPlayer_ios.framework */,
+				0BADA01066C2F93A1F349786 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework */,
+				5B804FA4936AD13957C5184E /* Pods_ACRadioPlayer_mac.framework */,
+				8E1E94B4388D85F1BCCE282D /* Pods_ACRadioPlayer_tvOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +183,8 @@
 				B8D0FE4F21B17D47005B64DF /* ACRadioPlayer_tvOS */,
 				6521C885257D4CB800E80317 /* ACRadioPlayer_SwiftUI */,
 				607FACD11AFB9204008FA782 /* Products */,
-				C9185C99D475B3E726EF3DE3 /* Pods */,
-				9C8AF1F1615EA645852C39CC /* Frameworks */,
+				85D5187A937A759F6F453996 /* Pods */,
+				57BC925017B9C33BE04D6B0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,17 +276,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9C8AF1F1615EA645852C39CC /* Frameworks */ = {
+		85D5187A937A759F6F453996 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93384C18F68BA278DC1055A8 /* Pods_ACRadioPlayer_Example.framework */,
-				EFC9F9BC32350C69D791241A /* Pods_ACRadioPlayer_ios.framework */,
-				5E0C0BD81D65DF86F8BE706C /* Pods_ACRadioPlayer_mac.framework */,
-				7A5988E8C2E73F5A5DD5D873 /* Pods_ACRadioPlayer_tvOS.framework */,
-				2CC9F409D9222F0F9356B488 /* Pods_ACRadioPlayer_SwiftUI.framework */,
-				AB5F3480523C15D4AEEB2742 /* Pods_ACRadioPlayer_ios_ACRadioPlayer_Tests.framework */,
+				9183F872CEE1C5988D54E067 /* Pods-ACRadioPlayer_SwiftUI.debug.xcconfig */,
+				2C2CE871889E6A8946D52CF5 /* Pods-ACRadioPlayer_SwiftUI.release.xcconfig */,
+				01C11CAD663EC627E42C2D61 /* Pods-ACRadioPlayer_ios.debug.xcconfig */,
+				63E6F0B69C742AFCC3559777 /* Pods-ACRadioPlayer_ios.release.xcconfig */,
+				68B2EDFCA98FD03D19A4AFBD /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig */,
+				E7A68FC8F90B1A56BE9C9461 /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig */,
+				A4F5950BFE265D5FA8F6153F /* Pods-ACRadioPlayer_mac.debug.xcconfig */,
+				FFC4464C86B72E03C95D9834 /* Pods-ACRadioPlayer_mac.release.xcconfig */,
+				0046EC696868468E021516BC /* Pods-ACRadioPlayer_tvOS.debug.xcconfig */,
+				2557A699AF63CDC0887DE837 /* Pods-ACRadioPlayer_tvOS.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		B8D0FE4F21B17D47005B64DF /* ACRadioPlayer_tvOS */ = {
@@ -292,27 +304,6 @@
 				B8D0FE5921B17D49005B64DF /* Info.plist */,
 			);
 			path = ACRadioPlayer_tvOS;
-			sourceTree = "<group>";
-		};
-		C9185C99D475B3E726EF3DE3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E3AF3BE5D28A2EC29DE30915 /* Pods-ACRadioPlayer_Example.debug.xcconfig */,
-				CBB7FF2C424962201E0CE53E /* Pods-ACRadioPlayer_Example.release.xcconfig */,
-				ADC0D107E336293D60827BCD /* Pods-ACRadioPlayer_Tests.debug.xcconfig */,
-				733A31C2D8DBB7FB9D433453 /* Pods-ACRadioPlayer_Tests.release.xcconfig */,
-				412A9F8B5D5E4B4705AE9F0E /* Pods-ACRadioPlayer_ios.debug.xcconfig */,
-				612EF1D0B96E8B922E04963F /* Pods-ACRadioPlayer_ios.release.xcconfig */,
-				BC2AE6470A4C0BE46711D9AF /* Pods-ACRadioPlayer_mac.debug.xcconfig */,
-				10B578434A03FE51AE221D8A /* Pods-ACRadioPlayer_mac.release.xcconfig */,
-				DC11A056E5D4F1B69F9ABE88 /* Pods-ACRadioPlayer_tvOS.debug.xcconfig */,
-				257B5148ADFF316304B18077 /* Pods-ACRadioPlayer_tvOS.release.xcconfig */,
-				2A8F19185E3807164EC6516A /* Pods-ACRadioPlayer_SwiftUI.debug.xcconfig */,
-				741614D8D15537554278BF0D /* Pods-ACRadioPlayer_SwiftUI.release.xcconfig */,
-				6FD964ADEBDFA118738E9D9B /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig */,
-				C4CDACDB88A2BE0BBCA28002 /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		FAE5E43F21AC6CD3003F96DB /* ACRadioPlayer_mac */ = {
@@ -344,11 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ACRadioPlayer_ios" */;
 			buildPhases = (
-				4FB7D000255781F466D86BD3 /* [CP] Check Pods Manifest.lock */,
+				340EF82A2967E1BC42EE7315 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3097E61A67569220A51C4DDB /* [CP] Embed Pods Frameworks */,
+				057EB2867151349DDBDA7E46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,11 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ACRadioPlayer_Tests" */;
 			buildPhases = (
-				41D126F2EA5D97B25A017638 /* [CP] Check Pods Manifest.lock */,
+				3FB4504ADE1873F630485E6C /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				EA96CFF37C3E01844275F24E /* [CP] Embed Pods Frameworks */,
+				C5752040ED5F9E5F101B2C2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,11 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6521C892257D4CBA00E80317 /* Build configuration list for PBXNativeTarget "ACRadioPlayer_SwiftUI" */;
 			buildPhases = (
-				5096E2F22D8BCFE4D70F34C2 /* [CP] Check Pods Manifest.lock */,
+				15542C88C7086466C2BA3BEF /* [CP] Check Pods Manifest.lock */,
 				6521C880257D4CB800E80317 /* Sources */,
 				6521C881257D4CB800E80317 /* Frameworks */,
 				6521C882257D4CB800E80317 /* Resources */,
-				CD4C8215F5DE18917A80718E /* [CP] Embed Pods Frameworks */,
+				7B4ABF42BF50C10D279815EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -402,11 +393,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8D0FE5C21B17D49005B64DF /* Build configuration list for PBXNativeTarget "ACRadioPlayer_tvOS" */;
 			buildPhases = (
-				42FDF28C21693133EA45EFFB /* [CP] Check Pods Manifest.lock */,
+				9CE1079243E0F7D4639409A7 /* [CP] Check Pods Manifest.lock */,
 				B8D0FE4A21B17D47005B64DF /* Sources */,
 				B8D0FE4B21B17D47005B64DF /* Frameworks */,
 				B8D0FE4C21B17D47005B64DF /* Resources */,
-				B766E47C38969BA58700C14C /* [CP] Embed Pods Frameworks */,
+				93D8E098E685B3AC786FFFB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,11 +412,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE5E44D21AC6CD4003F96DB /* Build configuration list for PBXNativeTarget "ACRadioPlayer_mac" */;
 			buildPhases = (
-				66A619608FCA4D79D6132A13 /* [CP] Check Pods Manifest.lock */,
+				58108E6318B98621BF39D777 /* [CP] Check Pods Manifest.lock */,
 				FAE5E43A21AC6CD3003F96DB /* Sources */,
 				FAE5E43B21AC6CD3003F96DB /* Frameworks */,
 				FAE5E43C21AC6CD3003F96DB /* Resources */,
-				7BE42A3CA63387B9BF8244C9 /* [CP] Embed Pods Frameworks */,
+				99B016907B72C51AB11F5A56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -448,7 +439,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 6G96AERJ7Q;
+						DevelopmentTeam = 6PLL9M5SE2;
 						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -458,7 +449,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 6G96AERJ7Q;
+						DevelopmentTeam = 6PLL9M5SE2;
 						LastSwiftMigration = 1020;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -469,12 +460,12 @@
 					};
 					B8D0FE4D21B17D47005B64DF = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 6G96AERJ7Q;
+						DevelopmentTeam = 6PLL9M5SE2;
 						ProvisioningStyle = Automatic;
 					};
 					FAE5E43D21AC6CD3003F96DB = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 6G96AERJ7Q;
+						DevelopmentTeam = 6PLL9M5SE2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -557,83 +548,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3097E61A67569220A51C4DDB /* [CP] Embed Pods Frameworks */ = {
+		057EB2867151349DDBDA7E46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_ios/Pods-ACRadioPlayer_ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-iOS10.0/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-iOS13.0/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACWebSocketClient-iOS13.0/ACWebSocketClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher-iOS13.0/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACWebSocketClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_ios/Pods-ACRadioPlayer_ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		41D126F2EA5D97B25A017638 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42FDF28C21693133EA45EFFB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ACRadioPlayer_tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4FB7D000255781F466D86BD3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ACRadioPlayer_ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5096E2F22D8BCFE4D70F34C2 /* [CP] Check Pods Manifest.lock */ = {
+		15542C88C7086466C2BA3BEF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -655,7 +592,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		66A619608FCA4D79D6132A13 /* [CP] Check Pods Manifest.lock */ = {
+		340EF82A2967E1BC42EE7315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACRadioPlayer_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB4504ADE1873F630485E6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58108E6318B98621BF39D777 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -677,43 +658,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7BE42A3CA63387B9BF8244C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-macOS10.12/ACRadioPlayer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B766E47C38969BA58700C14C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-tvOS10.0/ACRadioPlayer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD4C8215F5DE18917A80718E /* [CP] Embed Pods Frameworks */ = {
+		7B4ABF42BF50C10D279815EA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -721,28 +666,102 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_SwiftUI/Pods-ACRadioPlayer_SwiftUI-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-iOS14.0/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACWebSocketClient-iOS14.0/ACWebSocketClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher-iOS14.0/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACWebSocketClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_SwiftUI/Pods-ACRadioPlayer_SwiftUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA96CFF37C3E01844275F24E /* [CP] Embed Pods Frameworks */ = {
+		93D8E098E685B3AC786FFFB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-tvOS16.0/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACWebSocketClient-tvOS16.0/ACWebSocketClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher-tvOS16.0/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACWebSocketClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_tvOS/Pods-ACRadioPlayer_tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B016907B72C51AB11F5A56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-macOS10.15/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACWebSocketClient-macOS10.15/ACWebSocketClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher-macOS10.15/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACWebSocketClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_mac/Pods-ACRadioPlayer_mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE1079243E0F7D4639409A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACRadioPlayer_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5752040ED5F9E5F101B2C2B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests/Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-iOS10.0/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACRadioPlayer-iOS13.0/ACRadioPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ACWebSocketClient-iOS13.0/ACWebSocketClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher-iOS13.0/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACRadioPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACWebSocketClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -959,10 +978,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 412A9F8B5D5E4B4705AE9F0E /* Pods-ACRadioPlayer_ios.debug.xcconfig */;
+			baseConfigurationReference = 01C11CAD663EC627E42C2D61 /* Pods-ACRadioPlayer_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				INFOPLIST_FILE = ACRadioPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -976,10 +995,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 612EF1D0B96E8B922E04963F /* Pods-ACRadioPlayer_ios.release.xcconfig */;
+			baseConfigurationReference = 63E6F0B69C742AFCC3559777 /* Pods-ACRadioPlayer_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				INFOPLIST_FILE = ACRadioPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -993,9 +1012,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FD964ADEBDFA118738E9D9B /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig */;
+			baseConfigurationReference = 68B2EDFCA98FD03D19A4AFBD /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1015,9 +1034,9 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4CDACDB88A2BE0BBCA28002 /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig */;
+			baseConfigurationReference = E7A68FC8F90B1A56BE9C9461 /* Pods-ACRadioPlayer_ios-ACRadioPlayer_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1033,7 +1052,7 @@
 		};
 		6521C890257D4CBA00E80317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A8F19185E3807164EC6516A /* Pods-ACRadioPlayer_SwiftUI.debug.xcconfig */;
+			baseConfigurationReference = 9183F872CEE1C5988D54E067 /* Pods-ACRadioPlayer_SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1053,6 +1072,7 @@
 				INFOPLIST_FILE = ACRadioPlayer_SwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pemungkah.ACRadioPlayer-SwiftUI";
@@ -1066,7 +1086,7 @@
 		};
 		6521C891257D4CBA00E80317 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 741614D8D15537554278BF0D /* Pods-ACRadioPlayer_SwiftUI.release.xcconfig */;
+			baseConfigurationReference = 2C2CE871889E6A8946D52CF5 /* Pods-ACRadioPlayer_SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1085,6 +1105,7 @@
 				INFOPLIST_FILE = ACRadioPlayer_SwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pemungkah.ACRadioPlayer-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1096,7 +1117,7 @@
 		};
 		B8D0FE5A21B17D49005B64DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC11A056E5D4F1B69F9ABE88 /* Pods-ACRadioPlayer_tvOS.debug.xcconfig */;
+			baseConfigurationReference = 0046EC696868468E021516BC /* Pods-ACRadioPlayer_tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1108,7 +1129,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ACRadioPlayer_tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1126,7 +1147,7 @@
 		};
 		B8D0FE5B21B17D49005B64DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 257B5148ADFF316304B18077 /* Pods-ACRadioPlayer_tvOS.release.xcconfig */;
+			baseConfigurationReference = 2557A699AF63CDC0887DE837 /* Pods-ACRadioPlayer_tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1137,7 +1158,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ACRadioPlayer_tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1153,7 +1174,7 @@
 		};
 		FAE5E44B21AC6CD4003F96DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC2AE6470A4C0BE46711D9AF /* Pods-ACRadioPlayer_mac.debug.xcconfig */;
+			baseConfigurationReference = A4F5950BFE265D5FA8F6153F /* Pods-ACRadioPlayer_mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1167,7 +1188,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ACRadioPlayer_mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1184,7 +1205,7 @@
 		};
 		FAE5E44C21AC6CD4003F96DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10B578434A03FE51AE221D8A /* Pods-ACRadioPlayer_mac.release.xcconfig */;
+			baseConfigurationReference = FFC4464C86B72E03C95D9834 /* Pods-ACRadioPlayer_mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1197,7 +1218,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6G96AERJ7Q;
+				DEVELOPMENT_TEAM = 6PLL9M5SE2;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ACRadioPlayer_mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

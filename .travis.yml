@@ -9,22 +9,22 @@ sudo: required
 
 env:
   global:
-    - WORKSPACE=Example/FRadioPlayer.xcworkspace
+    - WORKSPACE=Example/ACRadioPlayer.xcworkspace
   matrix:
     - DESTINATION="platform=iOS Simulator,name=iPhone 12 Pro,OS=14.2"
-      SCHEME=FRadioPlayer-Example
+      SCHEME=ACRadioPlayer-Example
       SDK=iphonesimulator14.2
       PLATFORM=ios
     #- DESTINATION="platform=macOS,arch=x86_64"
-    #  SCHEME=FRadioPlayer_mac
+    #  SCHEME=ACRadioPlayer_mac
     #  SDK=macosx11.0
     #  PLATFORM=macos
     - DESTINATION="platform=tvOS Simulator,name=Apple TV,OS=14.2"
-      SCHEME=FRadioPlayer_tvOS
+      SCHEME=ACRadioPlayer_tvOS
       SDK=appletvsimulator14.2
       PLATFORM=tvos
     - DESTINATION="platform=iOS Simulator,name=iPhone 12 Pro,OS=14.2"
-      SCHEME=FRadioPlayer_SwiftUI
+      SCHEME=ACRadioPlayer_SwiftUI
       SDK=iphonesimulator14.2
       PLATFORM=ios
 podfile: Example/Podfile
