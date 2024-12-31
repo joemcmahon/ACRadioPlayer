@@ -22,15 +22,15 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
                        DESC
 
   s.homepage         = 'https://github.com/joemcmahon/ACRadioPlayer'
-  s.screenshots     = 'https://joemcmahon.com/assets/img/web/fradioplayer-example.png'
+  s.screenshots     = 'https://pemungkah.com/wp-content/uploads/2024/12/ACRadioPlayer_demo.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Fethi El Hassasna' => 'e.fethi.c@gmail.com' }
   s.source           = { :git => 'https://github.com/joemcmahon/ACRadioPlayer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://bsky.app/profile/equinoxdeschanel.bsky.social'
 
   s.ios.deployment_target = '13.0'
-  s.osx.deployment_target = '10.14'
-  s.tvos.deployment_target = '14.0'
+  s.osx.deployment_target = '10.15'
+  s.tvos.deployment_target = '15'
   s.swift_version = '5.0'
   s.source = { :git => 'https://github.com/joemcmahon/ACRadioPlayer.git', :tag => s.version.to_s }
   s.source_files = 'Sources/**/*.swift'
@@ -41,6 +41,6 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ACWebSocketClient', '~> 0.1.3'
+  s.dependency 'ACWebSocketClient', '~> 0.1.4'
   s.dependency 'Kingfisher', '~> 7.0'
 end
