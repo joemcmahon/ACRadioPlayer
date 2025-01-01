@@ -35,8 +35,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2s-Uf-eVI">
-                                        <rect key="frame" x="0.0" y="99" width="515" height="91"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2s-Uf-eVI">
+                                        <rect key="frame" x="116" y="99" width="399" height="91"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,8 +47,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4R-PM-1Db">
-                                        <rect key="frame" x="0.0" y="198" width="515" height="91"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Track:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4R-PM-1Db">
+                                        <rect key="frame" x="126" y="198" width="389" height="91"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -132,25 +132,48 @@
                                     <constraint firstAttribute="trailing" secondItem="Xx7-Kj-c37" secondAttribute="trailing" id="pmM-5W-few"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Album:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQF-Rv-8Re">
+                                <rect key="frame" x="554" y="485" width="389" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CLN-vA-M3Y" userLabel="AlbumLabel">
+                                <rect key="frame" x="976" y="485" width="654" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sW5-ld-h1C">
-                                <rect key="frame" x="272" y="320" width="354" height="353"/>
+                                <rect key="frame" x="164" y="306" width="492" height="491"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="h4R-PM-1Db" firstAttribute="top" secondItem="o2s-Uf-eVI" secondAttribute="bottom" constant="8" id="0bm-kR-H04"/>
                             <constraint firstItem="h2G-yx-6cH" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="128" id="2Le-s9-yxA"/>
+                            <constraint firstItem="nbn-Hj-94P" firstAttribute="leading" secondItem="vVj-aN-10v" secondAttribute="leading" id="DYO-wX-9dD"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="eQ6-6Z-X9l" secondAttribute="bottom" constant="128" id="GBg-xw-kB2"/>
+                            <constraint firstAttribute="bottom" secondItem="nbn-Hj-94P" secondAttribute="bottom" constant="603" id="OLX-yZ-4Ay"/>
+                            <constraint firstItem="nbn-Hj-94P" firstAttribute="trailing" secondItem="vVj-aN-10v" secondAttribute="trailing" id="PWB-rn-6jw"/>
+                            <constraint firstItem="nbn-Hj-94P" firstAttribute="top" secondItem="W5S-Wd-Lsi" secondAttribute="bottom" constant="8" id="VPS-Mq-Ul6"/>
                             <constraint firstItem="eQ6-6Z-X9l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q1i-Je-Y9W" secondAttribute="trailing" constant="32" id="Wtt-qB-mel"/>
+                            <constraint firstItem="h4R-PM-1Db" firstAttribute="trailing" secondItem="tRi-me-bBh" secondAttribute="trailing" id="YlH-dX-dwZ"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="eQ6-6Z-X9l" secondAttribute="trailing" constant="128" id="Yma-Q7-tkQ"/>
                             <constraint firstItem="Q1i-Je-Y9W" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="128" id="ZV4-je-FW1"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="Q1i-Je-Y9W" secondAttribute="bottom" constant="128" id="hkC-j7-Ife"/>
                             <constraint firstItem="b3A-ng-e8R" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="iBd-W7-3GI"/>
                             <constraint firstItem="h2G-yx-6cH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="64" id="kcf-g4-I8X"/>
+                            <constraint firstAttribute="bottom" secondItem="h4R-PM-1Db" secondAttribute="bottom" constant="603" id="pxo-Vh-sKG"/>
+                            <constraint firstItem="h4R-PM-1Db" firstAttribute="leading" secondItem="tRi-me-bBh" secondAttribute="leading" id="zPS-oH-5xE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="albumLabel" destination="CLN-vA-M3Y" id="b65-6h-rdo"/>
                         <outlet property="artistLabel" destination="W5S-Wd-Lsi" id="Dsg-7N-513"/>
                         <outlet property="artworkImageView" destination="sW5-ld-h1C" id="zZQ-yI-omx"/>
                         <outlet property="stationLabel" destination="vVj-aN-10v" id="YGK-I7-wgm"/>

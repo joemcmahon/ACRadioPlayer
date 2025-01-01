@@ -29,9 +29,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var stationLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var trackLabel: UILabel!
-    @IBOutlet weak var artworkImageView: UIImageView!
     @IBOutlet weak var statusLabel: UILabel!
-
+    @IBOutlet weak var albumLabel: UILabel!
+    @IBOutlet weak var artworkImageView: UIImageView!
+    
     // Actions
     override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
         presses.forEach { press in
@@ -70,10 +71,13 @@ class ViewController: UIViewController {
     }
     
     func metadataChanged(status: ACStreamStatus) {
-        print("got a status change")
+        if !status.changed {
+            return
+        }
         self.artworkImageView.kf.setImage(with: status.artwork)
         self.artistLabel.text = status.artist
         self.trackLabel.text = status.track
+        self.albumLabel.text = status.album
     }
 
     func updateNowPlaying(with track: Track?) {
