@@ -9,22 +9,22 @@
 import Cocoa
 import MediaPlayer
 import ACRadioPlayer
+import ACWebSocketClient
+import Kingfisher
 
 class ViewController: NSViewController {
 
     let player: ACRadioPlayer = ACRadioPlayer.shared
-    
+    let client = ACWebSocketClient()
     // List of stations
-    let stations = [Station(name: "AZ Rock Radio",
-                            detail: "We Know Music from A to Z",
-                            url: URL(string: "http://cassini.shoutca.st:9300/stream")!,
-                            image: NSImage(named: "station4")),
-                    
-                    Station(name: "Newport Folk Radio",
-                            detail: "Are you ready to Folk?",
-                            url: URL(string: "http:rfcmedia.streamguys1.com/Newport.mp3")!,
-                            image: NSImage(named: "station2")),
-                    
+    let stations = [
+                    Station(name: "RadioSpiral",
+                            detail: "Captivating Electronica, 24/7",
+                            url: URL(string: "http://spiral.radio:8000/stream.mp3")!,
+                            image: NSImage(named: "station4")!,
+                            serverName: "spiral.radio",
+                            shortCode: "radiospiral"),
+
                     Station(name: "Absolute Country Hits Radio",
                             detail: "The Music Starts Here",
                             url: URL(string: "http:strm112.1.fm/acountry_mobile_mp3")!,
@@ -39,7 +39,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var artistLabel: NSTextField!
     @IBOutlet weak var trackLabel: NSTextField!
     @IBOutlet weak var artworkImage: NSImageView!
-    @IBOutlet weak var statusLabel: NSTextField!
+    @IBOutlet weak var albumLabel: NSTextField!
     
     @IBAction func previous(_ sender: Any) {
         selectedIndex -= 1
@@ -83,7 +83,24 @@ class ViewController: NSViewController {
     func selectStation(at position: Int) {
         stationLabel.stringValue = stations[selectedIndex].name
         player.radioURL = stations[selectedIndex].url
+        if let serverName = stations[selectedIndex].serverName,
+            let shortCode = stations[selectedIndex].shortCode {
+            client.configurationDidChange(serverName: serverName, shortCode: shortCode)
+            client.addSubscriber(callback: metadataChanged)
+        }
+
     }
+    
+    func metadataChanged(status: ACStreamStatus) {
+        if !status.changed {
+            return
+        }
+        artworkImage.kf.setImage(with: status.artwork)
+        artistLabel.stringValue = status.artist
+        trackLabel.stringValue = status.track
+        albumLabel.stringValue = status.album
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,7 +109,7 @@ class ViewController: NSViewController {
         
         selectedIndex = 1
         // Show current player state
-        statusLabel.stringValue = player.state.description
+        //statusLabel.stringValue = player.state.description
     }
 
     override var representedObject: Any? {
@@ -130,7 +147,7 @@ class ViewController: NSViewController {
 extension ViewController: ACRadioPlayerDelegate {
     
     func radioPlayer(_ player: ACRadioPlayer, playerStateDidChange state: ACRadioPlayerState) {
-        statusLabel.stringValue = state.description
+        //statusLabel.stringValue = state.description
     }
     
     func radioPlayer(_ player: ACRadioPlayer, playbackStateDidChange state: ACRadioPlaybackState) {

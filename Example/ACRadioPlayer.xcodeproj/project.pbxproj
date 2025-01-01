@@ -25,6 +25,7 @@
 		6521C8CC257D506B00E80317 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D531FD4915300281653 /* Station.swift */; };
 		6521C8D2257D506E00E80317 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D541FD4915300281653 /* Track.swift */; };
 		65347D3E257D71FC00DDE1C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		71C2D2722D26069600E4AC33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C2D2712D26069600E4AC33 /* Assets.xcassets */; };
 		71FB6DBB2D1D00C70076DD97 /* ACRadioPlayer_SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB6DBA2D1D00C70076DD97 /* ACRadioPlayer_SwiftUI.swift */; };
 		71FB6DBD2D1D01940076DD97 /* NowPlayingSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB6DBC2D1D01940076DD97 /* NowPlayingSplitView.swift */; };
 		B8D0FE5121B17D47005B64DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0FE5021B17D47005B64DF /* AppDelegate.swift */; };
@@ -41,7 +42,6 @@
 		EB1CAD2F9DE73F6870ECE0CD /* Pods_ACRadioPlayer_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CD19F44189750C171562FB /* Pods_ACRadioPlayer_tvOS.framework */; };
 		FAE5E44121AC6CD3003F96DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5E44021AC6CD3003F96DB /* AppDelegate.swift */; };
 		FAE5E44321AC6CD3003F96DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5E44221AC6CD3003F96DB /* ViewController.swift */; };
-		FAE5E44521AC6CD4003F96DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE5E44421AC6CD4003F96DB /* Assets.xcassets */; };
 		FAE5E44821AC6CD4003F96DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE5E44621AC6CD4003F96DB /* Main.storyboard */; };
 		FAE5E45421AC76AA003F96DB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D541FD4915300281653 /* Track.swift */; };
 		FAE5E45521AC76AE003F96DB /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE63D531FD4915300281653 /* Station.swift */; };
@@ -82,6 +82,7 @@
 		6521C8AB257D4EA900E80317 /* TabIconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIconsView.swift; sourceTree = "<group>"; };
 		6521C8B2257D4ED000E80317 /* AirPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayView.swift; sourceTree = "<group>"; };
 		655FC62D257D59A900867676 /* ACRadioPlayer_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ACRadioPlayer_SwiftUI.entitlements; sourceTree = "<group>"; };
+		71C2D2712D26069600E4AC33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71FB6DBA2D1D00C70076DD97 /* ACRadioPlayer_SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRadioPlayer_SwiftUI.swift; sourceTree = "<group>"; };
 		71FB6DBC2D1D01940076DD97 /* NowPlayingSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingSplitView.swift; sourceTree = "<group>"; };
 		79CD19F44189750C171562FB /* Pods_ACRadioPlayer_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRadioPlayer_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +111,6 @@
 		FAE5E43E21AC6CD3003F96DB /* ACRadioPlayer_mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRadioPlayer_mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE5E44021AC6CD3003F96DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE5E44221AC6CD3003F96DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAE5E44421AC6CD4003F96DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE5E44721AC6CD4003F96DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE5E44921AC6CD4003F96DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE5E44A21AC6CD4003F96DB /* ACRadioPlayer_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ACRadioPlayer_mac.entitlements; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 			children = (
 				FAE5E44021AC6CD3003F96DB /* AppDelegate.swift */,
 				FAE5E44221AC6CD3003F96DB /* ViewController.swift */,
-				FAE5E44421AC6CD4003F96DB /* Assets.xcassets */,
+				71C2D2712D26069600E4AC33 /* Assets.xcassets */,
 				FAE5E44621AC6CD4003F96DB /* Main.storyboard */,
 				FAE5E44921AC6CD4003F96DB /* Info.plist */,
 				FAE5E44A21AC6CD4003F96DB /* ACRadioPlayer_mac.entitlements */,
@@ -540,7 +540,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE5E44521AC6CD4003F96DB /* Assets.xcassets in Resources */,
+				71C2D2722D26069600E4AC33 /* Assets.xcassets in Resources */,
 				FAE5E44821AC6CD4003F96DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
