@@ -9,6 +9,8 @@
 import UIKit
 import MediaPlayer
 import ACRadioPlayer
+import ACWebSocketClient
+import Kingfisher
 
 
 class ViewController: UIViewController {
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
     
     // Singleton ref to player
     let player: ACRadioPlayer = ACRadioPlayer.shared
+    let client = ACWebSocketClient()
     
     // List of stations
     let stations = [Station(name: "AZ Rock Radio",
@@ -75,6 +78,9 @@ class ViewController: UIViewController {
         player.httpHeaderFields = ["user-agent": "ACRadioPlayer"]
         player.delegate = self
         
+        // Set up callback
+        client.addSubscriber(callback: trackChange)
+        
         // Show current player state
         statusLabel.text = player.state.description
         
@@ -82,6 +88,13 @@ class ViewController: UIViewController {
         infoContainer.isHidden = true
         
         setupRemoteTransportControls()
+    }
+    
+    func trackChange(status: ACStreamStatus) {
+        print("Stream status changed")
+        artistLabel.text = status.artist
+        trackLabel.text = status.track
+        artworkImageView.kf.setImage(with: status.artwork)
     }
     
     @IBAction func playTap(_ sender: Any) {
@@ -111,6 +124,9 @@ class ViewController: UIViewController {
     func selectStation(at position: Int) {
         player.radioURL = stations[selectedIndex].url
         tableView.selectRow(at: IndexPath(item: position, section: 0), animated: true, scrollPosition: .none)
+        print("attempt to set up client")
+        client.configurationDidChange(serverName: stations[selectedIndex].serverName ?? "",
+                                      shortCode: stations[selectedIndex].shortCode ?? "")
     }
 }
 

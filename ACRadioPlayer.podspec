@@ -41,6 +41,6 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ACWebSocketClient', '~> 0.1.4'
+  s.dependency 'ACWebSocketClient', '~> 0.1.7'
   s.dependency 'Kingfisher', '~> 7.0'
 end
