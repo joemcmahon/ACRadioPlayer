@@ -10,16 +10,21 @@ import UIKit
 import Foundation
 import MediaPlayer
 import ACRadioPlayer
+import ACWebSocketClient
+import Kingfisher
 
 class ViewController: UIViewController {
 
     let player: ACRadioPlayer = ACRadioPlayer.shared
+    let client = ACWebSocketClient()
 
     // List of stations
     let station = Station(name: "RadioSpiral",
                           detail: "Captivating Electronica, 24/7",
-                          url: URL(string: "http://spiral.radio:8000/stream.mp3")!
-    )
+                          url: URL(string: "http://spiral.radio:8000/stream.mp3")!,
+                          image: UIImage(named: "station4")!,
+                          serverName: "spiral.radio",
+                          shortCode: "radiospiral")
 
     @IBOutlet weak var stationLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
@@ -49,6 +54,11 @@ class ViewController: UIViewController {
 
         // Set the delegate for the radio player
         player.delegate = self
+        if let serverName = station.serverName,
+            let shortCode = station.shortCode {
+            client.configurationDidChange(serverName: serverName, shortCode: shortCode)
+            client.addSubscriber(callback: metadataChanged)
+        }
 
         stationLabel.text = station.name
         player.radioURL = station.url
@@ -57,6 +67,13 @@ class ViewController: UIViewController {
         
         // Show current player state
         statusLabel.text = player.state.description
+    }
+    
+    func metadataChanged(status: ACStreamStatus) {
+        print("got a status change")
+        self.artworkImageView.kf.setImage(with: status.artwork)
+        self.artistLabel.text = status.artist
+        self.trackLabel.text = status.track
     }
 
     func updateNowPlaying(with track: Track?) {
