@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ACRadioPlayer'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'A radio player for iOS/macOS/tvOS'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
   s.homepage         = 'https://github.com/joemcmahon/ACRadioPlayer'
   s.screenshots     = 'https://pemungkah.com/wp-content/uploads/2024/12/ACRadioPlayer_demo.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Fethi El Hassasna' => 'e.fethi.c@gmail.com' }
+  s.author           = { 'Joe McMahon' => 'joe.mcmahon@gmail.com' }
   s.source           = { :git => 'https://github.com/joemcmahon/ACRadioPlayer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://bsky.app/profile/equinoxdeschanel.bsky.social'
 
