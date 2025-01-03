@@ -8,14 +8,17 @@
 
 import SwiftUI
 import ACRadioPlayer
+import ACWebSocketClient
+import Kingfisher
 
 struct NowPlayingView: View {
     
     @EnvironmentObject var radioPlayer: RadioPlayer
+    @EnvironmentObject var client: ACWebSocketClient
     
     var body: some View {
         HStack {
-            Image(uiImage: radioPlayer.radio.track.image ?? #imageLiteral(resourceName: "albumArt"))
+            KFImage(client.status.artwork)
                 .resizable()
                 .foregroundColor(Color.secondary)
                 .scaledToFit()
@@ -23,13 +26,13 @@ struct NowPlayingView: View {
             
             VStack(alignment: .leading, spacing: 8, content: {
                 
-                Text(radioPlayer.radio.track.name ?? "")
+                Text(client.status.track)
                     .font(.body)
                     .bold()
                     .lineLimit(1)
                     .allowsTightening(true)
                     
-                Text(radioPlayer.radio.track.artist ?? "")
+                Text(client.status.artist)
                     .font(.footnote)
                     .lineLimit(1)
                     .allowsTightening(true)
@@ -48,8 +51,11 @@ struct NowPlayingView: View {
 struct NowPlayingView_Previews: PreviewProvider {
     static var previews: some View {
         let state = RadioPlayer()
+        let client = ACWebSocketClient()
+
         NowPlayingView()
             .environmentObject(state)
+            .environmentObject(client)
             .preferredColorScheme(.dark)
     }
 }

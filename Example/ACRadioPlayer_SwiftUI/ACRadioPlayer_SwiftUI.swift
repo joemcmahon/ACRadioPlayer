@@ -8,14 +8,19 @@
 
 import SwiftUI
 import ACRadioPlayer
+import ACWebSocketClient
+import Kingfisher
 
 @main
 struct ACRadioPlayer_SwiftUIApp: App {
+    var client = ACWebSocketClient.shared
     var radioPlayer = RadioPlayer()
 
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(radioPlayer)
+            ContentView()
+                .environmentObject(radioPlayer)
+                .environmentObject(client)
         }
     }
 }
@@ -31,6 +36,8 @@ struct Radio {
 class RadioPlayer: ACRadioPlayerDelegate, ObservableObject {
     
     @Published var radio = Radio()
+    @Published var client: ACWebSocketClient = ACWebSocketClient.shared
+    @Published var currentMetaData: ACStreamStatus = ACStreamStatus()
     
     // Singleton ref to player
     var player: ACRadioPlayer = ACRadioPlayer.shared
@@ -39,17 +46,19 @@ class RadioPlayer: ACRadioPlayerDelegate, ObservableObject {
     var stations = [Station(name: "AZ Rock Radio",
                             detail: "We Know Music from A to Z",
                             url: URL(string: "http://cassini.shoutca.st:9300/stream")!,
-                            image: #imageLiteral(resourceName: "station4")),
+                            image: #imageLiteral(resourceName: "station3")),
                     
                     Station(name: "Metal PR",
                             detail: "El Lechón Atómico",
                             url: URL(string: "http://199.195.194.140:8026/live")!,
                             image: #imageLiteral(resourceName: "station5")),
                     
-                    Station(name: "Chillout",
-                            detail: "Your Lifestyle... Your Music!",
-                            url: URL(string: "http://ic7.101.ru:8000/c15_3")!,
-                            image: #imageLiteral(resourceName: "albumArt")),
+                    Station(name: "RadioSpiral",
+                            detail: "Captivating Electronica 24/7",
+                            url: URL(string: "https://spiral.radio:8000/stream.mp3")!,
+                            image: #imageLiteral(resourceName: "station6"),
+                           serverName: "spiral.radio",
+                            shortCode: "radiospiral"),
                     
                     Station(name: "Absolute Country Hits Radio",
                             detail: "The Music Starts Here",
@@ -116,6 +125,20 @@ class RadioPlayer: ACRadioPlayerDelegate, ObservableObject {
     
     private func stationDidChange(station: Station) {
         player.radioURL = station.url
-        radio.track = Track(artist: station.detail, name: station.name, image: station.image)
+        //radio.track = Track(artist: station.detail, name: station.name, image: station.image)
+        if let serverName = station.serverName,
+            let shortCode = station.shortCode {
+            client.configurationDidChange(serverName: serverName, shortCode: shortCode)
+            client.addSubscriber(callback: metadataChanged)
+        }
     }
+    
+    private func metadataChanged(status: ACStreamStatus) {
+        if !status.changed {
+            return
+        }
+        print("metadata updated")
+        currentMetaData = client.status
+    }
+
 }
