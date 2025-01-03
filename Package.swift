@@ -19,9 +19,9 @@ let package = Package(
     targets: [
         .target(
             name: "ACRadioPlayer",
-            dependencies: ["ACRadioPlayer", "ACWebSocketClient"]),
+            dependencies: ["ACRadioPlayer"]),
         .testTarget(
             name: "ACRadioPlayerTests",
-            dependencies: ["ACRadioPlayer", "ACWebSocketClient"]),
+            dependencies: ["ACRadioPlayer"]),
     ]
 )
