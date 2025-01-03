@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ACRadioPlayer'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A radio player for iOS/macOS/tvOS'
 
 # This description is used to generate tags and improve search results.
@@ -41,6 +41,6 @@ ACRadioPlayer is a wrapper around AVPlayer to handle internet radio playback.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ACWebSocketClient', '~> 0.1.7'
-  s.dependency 'Kingfisher', '~> 7.0'
+  s.dependency 'ACWebSocketClient', '~> 0.1.9'
+  s.dependency 'Kingfisher', '~> 8.0'
 end

@@ -6,9 +6,9 @@ import PackageDescription
 let package = Package(
     name: "ACRadioPlayer",
     platforms: [
-        .macOS(.v10_12),
-        .iOS(.v10),
-        .tvOS(.v10)
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .tvOS(.v15)
     ],
     products: [
         .library(
@@ -19,9 +19,9 @@ let package = Package(
     targets: [
         .target(
             name: "ACRadioPlayer",
-            dependencies: []),
+            dependencies: ["ACRadioPlayer", "ACWebSocketClient"]),
         .testTarget(
             name: "ACRadioPlayerTests",
-            dependencies: ["ACRadioPlayer"]),
+            dependencies: ["ACRadioPlayer", "ACWebSocketClient"]),
     ]
 )
